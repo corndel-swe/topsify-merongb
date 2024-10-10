@@ -28,7 +28,7 @@ public class ReadFile  implements Runnable{
             StringBuilder allQueries = new StringBuilder();
        for (UsersModel user : users) {
            String queries = String.format("INSERT INTO users" +
-                   " VALUES(%d, '%s', '%s', %s, %s, %s, '%s');",
+                   " VALUES(%d, '%s', '%s', '%s', '%s', '%s', '%s');",
                    user.getId(),
                    escapeSingleQuotes(user.getUsername()),
                    escapeSingleQuotes(user.getFirstName()),
